@@ -2,15 +2,17 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(120deg, white, #fda085);
+  background: linear-gradient(120deg, white, #eddad5);
   color: #333;
   overflow-x: hidden;
 }
 
 h1, h2 {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
   color: #4a148c;
+  border-style: double;
+  border-width: 50%;
 }
 
 h1 {
@@ -18,7 +20,7 @@ h1 {
   animation: pulse 2s infinite;
 }
 h2 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: lighter;
 }
 button {
@@ -54,6 +56,7 @@ input[type="text"], input[type="number"] {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 10px;
+  border-style: ridge;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   animation: fadeIn 1s ease-in;
 }
@@ -63,12 +66,63 @@ input[type="text"], input[type="number"] {
   content: '🧙‍♂️';
   margin-right: 10px;
   font-size: 1.5em;
+  background-image:url("file:///Users/Aminata/Downloads/undraw_online-test_20lm-2.svg");
 }
 
 .quiz-container h1:after {
   content: '🧙‍♀️';
   margin-left: 10px;
   font-size: 1.5em;
+}
+
+.quiz-image,
+.players-image,
+.playing-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 70%;
+  height: auto;
+}
+
+#make-quiz-page,
+#add-players-page {
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+form input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #5548c8;
 }
 
 

@@ -23,8 +23,6 @@ let quizQuestions = [];
 const userQuiz = [];
 const maxScore = 10;
 
-const userQuiz = [{ question: "", options: [{ text: "", isCorrect }] }];
-const maxScore = 10;
 
 async function fetchQuizQuestions() {
   try {
